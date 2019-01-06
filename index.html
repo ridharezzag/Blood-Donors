@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Blood Donors</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/registre.css">
+    <link rel="stylesheet" href="styles/profile.css">
+
+</head>
+
+
+</style>
+
+<body>
+    <form action="http://localhost:3000/api/submit" method="POST" encType="multipart/form-data" target="_blank">
+        <div class="container">
+            <h1> Register </h1>
+
+            <label for="first-name"><b>First Name: </b></label>
+            <input type="text" id="firstName" placeholder="Enter First Name" name="firstName" required autofocus />
+
+            <label for="last-name"><b>Last Name: </b></label>
+            <input type="text" id="lastName" placeholder="Enter Last Name" name="lastName" required autofocus />
+
+            <label for="gender-name"><b>Gender: </b></label>
+            <di id="radio">
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            </di>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" placeholder="Enter Email" name="email" required autofocus />
+
+            <label for="mobile-number"><b>Mobile Number:</b></label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" name="mobileNumber" autofocus />
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required autofocus />
+
+            <!--<label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required autofocus />-->
+
+            <label for="upload image"><b>Upload Image: </b></label>
+            <input type="file" name="profileImage" accept="image/*" />
+
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" Value="Click" onClick="sendFormData(this.form)" class="registerbtn">Register</button>
+
+            <div class="container signin">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+        </div>
+    </form>
+
+    <div>
+        <h1> Lifes Savers: </h1>
+        <section id="members" class="members">
+        </section>
+    </div>
+
+    <script>
+        //this fonction will send the entred data in the form to the backend server
+        function sendFormData(form) {
+            var firstnameForm = form.firstName.value;
+            console.log(firstnameForm);
+        }
+
+
+        // fetch post data
+        // var url = 'http://localhost:3000/submit';
+        // var data = {
+        //         // firstName: "nabila33",
+        //         // lastName: "rezzag",
+        //         // userName: "ridharezzag",
+        //         // email: "algeriamask@gmail.com",
+        //         // password: "123456",
+        //         // mobileNumber: "7277760476",
+        //         // profileImage: "images/members/rida.jpg"
+
+        //         "firstName": "nabila33",
+        //     "lastName": "rezzag",
+        //     "userName": "ridharezzag",
+        //     "email": "algeriamask@gmail.com",
+        //     "password": "123456",
+        //     "mobileNumber": "7277760476",
+        //     "profileImage": "images/members/rida.jpg"
+        //     };
+
+        // fetch(url, {
+        //     method: 'POST', // 'GET', 'PUT', 'DELETE', etc.
+        //     mode: "no-cors",
+        //     credentials: 'include',
+        //     // body: data, // Coordinate the body type with 'Content-Type'body: JSON.stringify(data),
+        //     body: JSON.stringify(data),
+        //     headers: new Headers({
+        //         'Content-Type': 'application/json'
+        //     })
+        // }).then(console.log("data sent"))
+
+
+    </script>
+    <script src="scripts/index.js"></script>
+    <!-- <script src="scripts/registre.js"></script> -->
+    <!-- <script src="scripts/app.js"></script> -->
+</body>
+
+</html>
