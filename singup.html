@@ -1,0 +1,75 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Blood Donors</title>
+    <meta name="description" content="The HTML5 Herald">
+    <meta name="author" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles/singup.css">
+
+</head>
+
+<body>
+
+    <div class="header">
+        <a href="#default" class="logo">Blood Donors</a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="#contact">Contact us</a>
+            <a href="#about">About us</a>
+        </div>
+    </div>
+
+
+    <form action="http://localhost:3000/api/submit" method="POST" encType="multipart/form-data" target="_blank">
+        <div class="container">
+            <h1> Register </h1>
+
+            <label for="first-name"><b>First Name: </b></label>
+            <input type="text" id="firstName" placeholder="Enter First Name" name="firstName" required autofocus />
+
+            <label for="last-name"><b>Last Name: </b></label>
+            <input type="text" id="lastName" placeholder="Enter Last Name" name="lastName" required autofocus />
+
+            <label for="gender-name"><b>Gender: </b></label>
+            <di id="radio">
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+            </di>
+
+            <label for="email"><b>Email:</b></label>
+            <input type="email" id="email" placeholder="Enter Email" name="email" required autofocus />
+
+            <label for="mobile-number"><b>Mobile Number:</b></label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" name="mobileNumber" autofocus />
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" id="password" placeholder="Enter Password" name="password" required autofocus />
+
+            <!--<label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" required autofocus />-->
+
+            <label for="upload image"><b>Upload Image: </b></label>
+            <input type="file" name="profileImage" accept="image/*" />
+
+            <hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" Value="Click" class="registerbtn">Register</button>
+
+            <div class="container signin">
+                <p>Already have an account? <a href="#">Sign in</a>.</p>
+            </div>
+        </div>
+    </form>
+
+
+    <!-- <script src="scripts/app.js"></script> -->
+</body>
+
+</html>
