@@ -9,8 +9,10 @@ body {
 }
 
 .members {
+    padding: 5px 10px 5px 10px;
     display: flex;
     flex-wrap: wrap;
+    justify-content:space-between;
 
 }
 
@@ -32,8 +34,21 @@ img {
     height: 185px;
 }
 
+.profileinfo {
+    display: inline-flex;
+    width: 96%;
+    padding: 2px 5px 2px 5px;
+}
+
 .profiletext {
-    padding: 2px 16px;
+    width: 70%;
+}
+
+.bloodtype {
+    margin: 10px;
+    color: red;
+    font-weight: bold;
+    font-size: x-large;
 }
 
 
@@ -42,52 +57,64 @@ img {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 1050px) {
-    
-body {
-    display: block;
-    margin: 0px;
-}
 
-.main-content {
-    display: block;
-    margin: 05px;
-}
+    body {
+        display: block;
+        margin: 0px;
+    }
 
-.members {
-    display: flex;
-    flex-wrap: wrap;
+    .main-content {
+        display: block;
+        margin: 05px;
+    }
 
-}
+    .members {
+        padding: 5px 10px 5px 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
 
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
-    width: 30%;
-    border-radius: 5px;
-    margin: 05px;
-}
+    }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 30%;
+        border-radius: 5px;
+        margin: 05px;
+    }
 
-img {
-    border-radius: 5px 5px 0 0;
-    width: 100%;
-    height: 165px;
-}
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
 
-.profiletext {
-    padding: 2px 16px;
-}
+    img {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 165px;
+    }
 
+    .profileinfo {
+        width: 100%;
+        width: -webkit-fill-available;
+        padding: 2px 5px 2px 5px;
+    }
 
+    .profileinfo {
+        display: inline-flex;
+        width: 96%;
+        padding: 2px 5px 2px 5px;
+    }
+
+    .profiletext {
+        width: 70%;
+    }
 
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-   
+
     body {
         display: block;
         margin: 0px;
@@ -99,8 +126,10 @@ img {
     }
 
     .members {
+        padding: 5px 10px 5px 10px;
         display: flex;
         flex-wrap: wrap;
+        justify-content:space-between;
 
     }
 
@@ -122,8 +151,21 @@ img {
         height: 160px;
     }
 
+    .profileinfo {
+        width: 100%;
+        width: -webkit-fill-available;
+        padding: 2px 5px 2px 5px;
+    }
+
+
+    .profileinfo {
+        display: inline-flex;
+        width: 96%;
+        padding: 2px 5px 2px 5px;
+    }
+
     .profiletext {
-        padding: 2px 16px;
+        width: 70%;
     }
 
 
