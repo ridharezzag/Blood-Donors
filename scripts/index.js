@@ -21,6 +21,8 @@ fetch('http://localhost:3000/api/members')
             var profileimage = document.createElement("IMG");
             profileimage.setAttribute("src", element.profileImage);
             profileimage.setAttribute("alt", "Member profile Image");
+            profileimage.setAttribute("class", "profile-image")
+            
 
             // create a div element to holde the profile infos, infos will holde any like name, lastname, phone blood type..
             var profileinformation = document.createElement("DIV");
