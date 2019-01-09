@@ -89,17 +89,40 @@ input[type=tel] {
     background: #f1f1f1;
 }
 
-#radio {
+#gender {
     width: 100%;
-    padding: 15px;
+    padding: 15px 10px 15px 0px;
     margin: 5px 0 22px 0;
     display: flex;
-    border: none;
+    /* border: none; */
     background: #f1f1f1;
+}
+
+#blood-type {
+    width: 100%;
+    padding: 15px 10px 15px 10px;
+    margin: 5px 0 22px 0;
+    display: flex;
+    /* border: none; */
+    background: #f1f1f1;
+}
+
+.full-name {
+    display: flex;
+    width: 100%;
+}
+
+.gender-blood {
+    display: flex;
+    width: 100%;
 }
 
 input[type="radio"] {
     margin: auto 05px auto 20px;
+}
+
+label {
+    padding-right: 5px;
 }
 
 input[type=text]:focus,
@@ -157,6 +180,47 @@ a {
         padding: 16px;
         background-color: white;
     }
+
+    #gender {
+        width: 100%;
+        padding: 15px 10px 15px 0px;
+        margin: 5px 0 22px 0;
+        display: flex;
+        /* border: none; */
+        background: #f1f1f1;
+    }
+
+    #blood-type {
+        width: 100%;
+        padding: 15px 10px 15px 10px;
+        margin: 5px 0 22px 0;
+        display: flex;
+        /* border: none; */
+        background: #f1f1f1;
+    }
+
+    .full-name {
+        display: flex;
+        width: 100%;
+    }
+
+    .gender-blood {
+        display: flex;
+        width: 100%;
+    }
+
+    input[type="radio"] {
+        margin: auto 05px auto 20px;
+    }
+
+    label {
+        padding-right: 5px;
+    }
+
+
+
+
+
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -167,4 +231,44 @@ a {
         padding: 16px;
         background-color: white;
     }
+
+
+
+    #gender {
+        width: 100%;
+        padding: 15px 05px 15px 0px;
+        margin: 5px 0 22px 0;
+        display: flex;
+        /* border: none; */
+        background: #f1f1f1;
+    }
+
+    #blood-type {
+        width: 100%;
+        padding: 15px 10px 15px 10px;
+        margin: 5px 0 22px 0;
+        display: flex;
+        /* border: none; */
+        background: #f1f1f1;
+    }
+
+    .full-name {
+        display: flex;
+        width: 100%;
+    }
+
+    .gender-blood {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+    }
+
+    input[type="radio"] {
+        margin: auto 05px auto 05px;
+    }
+
+    label {
+        padding-right: 5px;
+    }
+
 }

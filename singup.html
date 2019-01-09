@@ -30,17 +30,37 @@
         <div class="container">
             <h1> Register </h1>
 
-            <label for="first-name"><b>First Name: </b></label>
-            <input type="text" id="firstName" placeholder="Enter First Name" name="firstName" required autofocus />
+            <div class="full-name">
+                <label for="first-name"><b>First Name: </b>
+                    <input type="text" id="firstName" placeholder="Enter First Name" name="firstName" required
+                        autofocus />
+                </label>
+                <label for="last-name"><b>Last Name: </b>
+                    <input type="text" id="lastName" placeholder="Enter Last Name" name="lastName" required autofocus />
+                </label>
+            </div>
+            
+            <div class="gender-blood">
+                <label for="gender-name"><b>Gender: </b>
+                    <di id="gender">
+                        <input type="radio" name="gender" value="male"> Male<br>
+                        <input type="radio" name="gender" value="female"> Female<br>
+                    </di>
+                </label>
 
-            <label for="last-name"><b>Last Name: </b></label>
-            <input type="text" id="lastName" placeholder="Enter Last Name" name="lastName" required autofocus />
-
-            <label for="gender-name"><b>Gender: </b></label>
-            <di id="radio">
-                <input type="radio" name="gender" value="male"> Male<br>
-                <input type="radio" name="gender" value="female"> Female<br>
-            </di>
+                <label for="blood-type"><b>Slect Blood: </b>
+                    <select id="blood-type" name="bloodType">
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </label>
+            </div>
 
             <label for="email"><b>Email:</b></label>
             <input type="email" id="email" placeholder="Enter Email" name="email" required autofocus />
