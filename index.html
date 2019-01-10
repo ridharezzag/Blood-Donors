@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/headerIndex.css">
     <link rel="stylesheet" href="styles/indexfooter.css">
-
+    <link rel="stylesheet" href="styles/modal.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
-	<!-- <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> -->
+    <!-- <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"> -->
 
 </head>
 
@@ -33,6 +33,30 @@
 
     <div class="main-content">
         <h1> Lifes Savers: </h1>
+        <div id="id01" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <header class="container">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close">&times;</span>
+                    <h2 id="Modal-member-name">Member Name</h2>
+                    <img id="Modal-member-image" src="images/logo/bloodlogo.png" alt="Member picture" height="300" width="100%">
+                </header>
+                <div class="container">
+                    <p id="Modal-member-blood">Information not available...</p>
+                    <p id="Modal-member-gender">Information not available...</p>
+                    <p id="Modal-member-state">Information not available...</p>
+                    <p id="Modal-member-phone">Information not available...</p>
+                    <p id="Modal-member-email">Information not available...</p>
+                </div>
+                <footer class="container">
+                    <button class="btn" type="button">Send him SMS</button>
+                    <button class="btn" type="button">Send him EMAIL</button>
+                </footer>
+            </div>
+
+        </div>
+
+
         <section id="members" class="members">
         </section>
     </div>

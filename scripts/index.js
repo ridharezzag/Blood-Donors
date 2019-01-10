@@ -9,7 +9,6 @@ fetch('http://localhost:3000/api/members')
         membersList = data;
 
         membersList.forEach(function (element) {
-
             // create a profile card to holde the Member information
             var profile = document.createElement("DIV");
             profile.className = "card";
@@ -55,13 +54,39 @@ fetch('http://localhost:3000/api/members')
             // appending profile text container and image container to the profile container
             profile.appendChild(profileimage);
             profile.appendChild(profileinformation);
-            
 
             // appending the profile built container to the dom
             document.getElementById("members").appendChild(profile);
+
+            // adding an event listner on each member when clicked on more information shows on a Modal
+            profile.addEventListener("click", function () {
+                
+                //set the Modal to disply when user picture clicked on
+                document.getElementById('id01').style.display = 'block';
+
+                document.getElementById("Modal-member-name").innerHTML = element.firstName +" "+ element.lastName;
+                document.getElementById("Modal-member-image").src = element.profileImage;
+                document.getElementById("Modal-member-blood").innerHTML = "Blood Type: " + element.bloodType;
+                document.getElementById("Modal-member-gender").innerHTML = "Gender: " + element.gender;
+                document.getElementById("Modal-member-phone").innerHTML = "Mobile Number: " + element.mobileNumber;
+                document.getElementById("Modal-member-email").innerHTML = "Email Address: " + element.email;
+                document.getElementById("Modal-member-state").innerHTML = "Living State: " + element.state;
+
+            });
+            
 
         });
 
 
     })
     .catch(error => console.error(error))
+
+    // close the modal by clicking anywher, if its open 
+    // Get the modal
+    var modal = document.getElementById('id01');
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }

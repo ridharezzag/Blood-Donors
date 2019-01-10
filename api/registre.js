@@ -138,7 +138,7 @@ app.get("/api/members", (req, res) => {
   // get data from mysql database
   con.connect(function(err) {
     if (err) throw err;
-    con.query("SELECT id, firstName, lastName, bloodType, profileImage FROM members", function(
+    con.query("SELECT id, firstName, lastName, bloodType, gender, email, mobileNumber, state, profileImage FROM members", function(
       err,
       result,
       fields
