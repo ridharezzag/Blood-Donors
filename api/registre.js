@@ -49,6 +49,7 @@ app.post("/api/submit", function(req, res) {
   var lastName = req.body.lastName;
   var gender = req.body.gender;
   var bloodType = req.body.bloodType;
+  var state = req.body.state;
   var email = req.body.email;
   var password = req.body.password;
   var mobileNumber = req.body.mobileNumber;
@@ -82,7 +83,7 @@ app.post("/api/submit", function(req, res) {
     if (err) throw err;
     // console.log("Connected! to database");
     var addMember =
-      "INSERT INTO members (firstName, lastName, gender, bloodType, email, password, mobileNumber, profileImage ) VALUES ('" +
+      "INSERT INTO members (firstName, lastName, gender, bloodType, state, email, password, mobileNumber, profileImage ) VALUES ('" +
       firstName +
       "', '" +
       lastName +
@@ -90,7 +91,9 @@ app.post("/api/submit", function(req, res) {
       gender +
       "', '" +
       bloodType +
-        "', '" +
+      "', '" +
+      state +
+      "', '" +
       email +
       "','" +
       password +

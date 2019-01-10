@@ -109,12 +109,27 @@ input[type=tel] {
     background: #f1f1f1;
 }
 
+#usa-states {
+    width: 100%;
+    padding: 15px 10px 15px 10px;
+    margin: 5px 0 22px 0;
+    display: flex;
+    /* border: none; */
+    background: #f1f1f1;
+}
+
 .full-name {
     display: flex;
     width: 100%;
 }
 
 .gender-blood {
+    display: flex;
+    width: 100%;
+}
+
+.mobile-states {
+    /* flex-wrap: wrap; */
     display: flex;
     width: 100%;
 }
@@ -201,12 +216,27 @@ a {
         background: #f1f1f1;
     }
 
+    #usa-states {
+        width: 100%;
+        padding: 15px 10px 15px 10px;
+        margin: 5px 0 22px 0;
+        display: flex;
+        /* border: none; */
+        background: #f1f1f1;
+    }
+
     .full-name {
         display: flex;
         width: 100%;
     }
 
     .gender-blood {
+        display: flex;
+        width: 100%;
+    }
+
+    .mobile-states {
+        /* flex-wrap: wrap; */
         display: flex;
         width: 100%;
     }
@@ -254,6 +284,15 @@ a {
         background: #f1f1f1;
     }
 
+    #usa-states {
+        width: 100%;
+        padding: 15px 10px 15px 10px;
+        margin: 5px 0 22px 0;
+        display: flex;
+        /* border: none; */
+        background: #f1f1f1;
+    }
+
     .full-name {
         display: flex;
         width: 100%;
@@ -261,6 +300,12 @@ a {
 
     .gender-blood {
         flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+    }
+
+    .mobile-states {
+        /* flex-wrap: wrap; */
         display: flex;
         width: 100%;
     }
