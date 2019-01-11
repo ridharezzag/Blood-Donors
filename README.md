@@ -37,8 +37,8 @@ Technologies used:
 ## How to install the Blood Donors app
 first download the repo to your machine.
 ## * steps: 
-* create a Mysql databse in your server name the databse: donors , if you want to test the app it locally use Xamp, .
-* importe the provide databese in this repo from file (Databes copy), to your databse.
+* create a Mysql databse in your server name the databse: donors , if you want to test the app in locall machine use Xamp, .
+* importe the provided databese in this repo from file (Databes copy), to your databse.
 * you will see that your databse have a table named members and has few registred members.
 * now upload the repos files to your server.
 * open file api/registre.js and update database info with your newly created database info, databse user and database passweord.
