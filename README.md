@@ -33,8 +33,12 @@ Technologies used:
 
 
 ## Desktop ScreenShot
-<img src="/screenshots/screenshot1.png" alt="App ScreenShot" height="420">
+<img src="/screenshots/screenshot1.png" alt="App ScreenShot" width="420">
+
+<img src="/screenshots/screenshot2.png" alt="App Solved ScreenShot" width="420">
 
 
-## Tablets ScreenShot
-<img src="/screenshots/screenshot2.png" alt="App Solved ScreenShot" height="420">
+## Mobile ScreenShot
+<img src="/screenshots/screenshotMobile1.png" alt="App Solved ScreenShot" height="420">
+<img src="/screenshots/screenshotMobile2.png" alt="App Solved ScreenShot" height="420">
+
