@@ -34,6 +34,23 @@ Technologies used:
 # Is the app Responsive? 
   Yes the App is 100% responsive for desktops, tablets, phones.
 
+## How to install the Blood Donors app
+first download the repo to your machine.
+## * steps: 
+* create a Mysql databse in your server name the databse: donors , if you want to test the app it locally use Xamp, .
+* importe the provide databese in this repo from file (Databes copy), to your databse.
+* you will see that your databse have a table named members and has few registred members.
+* now upload the repos files to your server.
+* open file api/registre.js and update database info with your newly created database info, databse user and database passweord.
+* if node.js already installed in your server make sure to instal:
+   * express.js
+   * body-parser.js
+   * mysql.js
+   * express-fileupload.js 
+    
+* now run the app: node api/registre.js
+* open index.html in your browser
+
 
 ## Desktop ScreenShot Examples
 <img src="images/screenshots/screenshot1.png" alt="App main ScreenShot" width="720">
