@@ -38,9 +38,9 @@ Technologies used:
 first download the repo to your machine.
 ## * steps: 
 * create a Mysql databse in your server name the databse: donors , if you want to test the app in locall machine use Xamp, .
-* importe the provided databese in this repo from file (Databes copy), to your databse.
+* importe the provided databese copy in this repo from file (Databes copy), to your databse.
 * you will see that your databse have a table named members and has few registred members.
-* now upload the repos files to your server.
+* now upload the repos files to your server, or your local server.
 * open file api/registre.js and update database info with your newly created database info, databse user and database passweord.
 * if node.js already installed in your server make sure to instal:
    * express.js
