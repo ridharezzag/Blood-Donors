@@ -3,6 +3,13 @@ body {
     margin: 0px;
 }
 
+#first-header {
+    text-align: center;
+    text-transform: uppercase;
+    color: green;
+    text-decoration: underline;
+}
+
 .main-content {
     display: block;
     margin: 8px;
