@@ -12,21 +12,21 @@ This is a simple app built to list blood donors, Members (Donors) list them selv
 
 
 ## How I built the Blood Donors app
-IBlood donors app is built using JavaScript and Node.js saving data using Mysql databse
+Blood donors app is built using JavaScript and Node.js saving data using Mysql databse
 Technologies used:
 ## * Frontend 
 * HTML5
 * CSS3
 * JavaScript
 
-*** Backend ***
+## * Backend 
 * Mysql for saving data
 * Node.js for RESTful API
-   * some frameworks used in Node.js 
+   some frameworks used in Node.js 
    * express.js
    * body-parser.js
    * mysql.js
-   * express-fileupload
+   * express-fileupload.js
 
 # Is the app Responsive? 
   Yes the App is 100% responsive for desktops, tablets, phones.
