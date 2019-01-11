@@ -32,13 +32,13 @@ Technologies used:
   Yes the App is 100% responsive for desktops, tablets, phones.
 
 
-## Desktop ScreenShot
-<img src="images/screenshots/screenshot1.png" alt="App ScreenShot" width="420">
+## Desktop ScreenShot Examples
+<img src="images/screenshots/screenshot1.png" alt="App ScreenShot" width="720">
 
-<img src="images/screenshots/screenshot2.png" alt="App Solved ScreenShot" width="420">
+<img src="images/screenshots/screenshot2.png" alt="App Solved ScreenShot" width="720">
 
 
-## Mobile ScreenShot
-<img src="images/screenshots/screenshotMobile1.png" alt="App Solved ScreenShot" height="420">
-<img src="images/screenshots/screenshotMobile2.png" alt="App Solved ScreenShot" height="420">
+## Mobile ScreenShot Examples
+<img src="images/screenshots/screenshotMobile1.png" alt="App Solved ScreenShot" width="420">
+<img src="images/screenshots/screenshotMobile2.png" alt="App Solved ScreenShot" width="420">
 
